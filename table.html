@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <style>
+         body {
+            margin: 0;
+            padding: 0;
+            background-color: #0B0B0B;
+         }
+        .all {
+            height: 100vh;
+            background-image: url('images/geometric.svg'); 
+            /* background-size: cover; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .table-container {
+            border-radius: 40px;
+            width: 1150px;
+            height: 600px;
+            padding: 100px;
+            overflow: hidden;
+            backdrop-filter: blur(70px);
+            background: rgba(24, 24, 24, 0.1); 
+            margin-top: -50px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            position: relative;
+            height: 650px;
+        }
+
+        th, td {
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #5620BD;
+            position: relative;
+            z-index: 1;
+            border-top: none;
+        }
+        th {
+            font-family: Proxima Nova;
+            font-weight: 600;
+            font-size: 40px;
+            text-align: center;
+            color: #fff;
+        }
+        td {
+            font-family: Proxima Nova;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 140%;
+            color: #fff;
+        }
+        td img {
+            max-width: 100%;
+            height: auto; 
+            border-radius: 10px; 
+            display: flex; 
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding-left: 50px;
+        }
+        tr:last-child td::before, tr:last-child th::before {
+            display: none;
+        }
+         tr:last-child td::before, tr:last-child th::before {
+            display: none;
+        }
+         tr:first-child td::before, tr:first-child th::before {
+            display: none;
+        }
+         td:first-child, th:first-child {
+            border-left: none; 
+        }
+         tr:last-child {
+            border-bottom: none; 
+        }
+         td:last-child, th:last-child {
+            border-right: none; 
+        }
+         tr:last-child td {
+            border-bottom: none; 
+        }
+        a {
+             text-decoration: none;
+             color: #fff;
+        }
+         body {
+        background-color: #0b0b0b;
+      }
+      .phonenumber {
+        font-family: Proxima Nova;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 140%;
+        text-transform: lowercase;
+        color: #fff;
+      }
+      .header {
+        display: flex;
+        justify-content: space-between;
+      }
+      .left {
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 45px;
+        gap: 21px;
+      }
+      .menu {
+        font-family: Proxima Nova;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 140%;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        gap: 122px;
+        margin-left: -143px;
+      }
+
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+      .circles {
+        display: flex;
+        justify-content: flex-end;
+        gap: 28px;
+        padding-right: 45px;
+        width: 42px;
+        height: 42px;
+        margin-top: 15px;
+      }
+      h1 {
+        font-family: Proxima Nova;
+        font-weight: 700;
+        font-size: 50px;
+        color: #fff;
+        display: block;
+        justify-content: flex-start;
+        padding-left: 40px;
+      }
+    </style>
+</head>
+<body>
+    <div class="header">
+      <div class="left">
+        <div class="phone"><img src="images/phone.svg" alt="" /></div>
+        <div class="phonenumber"><p>459-568-017</p></div>
+      </div>
+      <div class="menu">
+        <a href="index.html"><p>Главная</p></a>
+        <a href="example.html"><p>Кейсы</p></a>
+        <a href="review.html"
+          ><p>Отзывы</p></a
+        >
+      </div>
+      <div class="circles">
+        <a href="https://mail.ru/"><img src="images/circle1.svg" alt="" /></a>
+        <a href="http://www.facebook.com.vn/"
+          ><img src="images/circle2.svg" alt=""
+        /></a>
+        <a href="https://www.instagram.com"
+          ><img src="images/circle3.svg" alt=""
+        /></a>
+      </div>
+    </div>
+    <div class="all">
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>№</th>
+                    <th>First name</th>
+                    <th><a href="https://www.google.ru/?gws_rd=ssl">Second name</a></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Lorem ipsum dolor</td>
+                    <td>Lorem ipsum dolor</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Lorem ipsum dolor</td>
+                    <td>Lorem ipsum dolor</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Lorem ipsum dolor</td>
+                    <td><img src=images/rect.svg alt="Изображение"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    </div>
+</body>
+</html>

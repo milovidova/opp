@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Отзывы</title>
+  </head>
+  <body>
+    <style>
+      body {
+        background-color: #0b0b0b;
+      }
+      .phonenumber {
+        font-family: Proxima Nova;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 140%;
+        text-transform: lowercase;
+        color: #fff;
+      }
+      .header {
+        display: flex;
+        justify-content: space-between;
+      }
+      .left {
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 45px;
+        gap: 21px;
+      }
+      .menu {
+        font-family: Proxima Nova;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 140%;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        gap: 122px;
+        margin-left: -143px;
+      }
+
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+      .circles {
+        display: flex;
+        justify-content: flex-end;
+        gap: 28px;
+        padding-right: 45px;
+        width: 42px;
+        height: 42px;
+        margin-top: 15px;
+      }
+      h1 {
+        font-family: Proxima Nova;
+        font-weight: 700;
+        font-size: 50px;
+        color: #fff;
+        display: block;
+        justify-content: flex-start;
+        padding-left: 40px;
+      }
+      .firstreview {
+        border: 1px solid #20222a;
+        border-radius: 45px;
+        width: 624px;
+        height: 148px;
+        background: #181818;
+        display: flex;
+        justify-content: flex-start;
+        gap: 27px;
+      }
+      .text1 {
+        font-family: Proxima Nova;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: #fff;
+        margin-top: 35px;
+      }
+      /* .insidefirstreview {
+        display: flex;
+        justify-content: flex-start;
+      } */
+      .person1 {
+        margin-top: 23px;
+        margin-left: 42px;
+      }
+      .reviews {
+        display: flex;
+        gap: 23px;
+        width: 2000px;
+        animation: moveText 20s linear infinite;
+      }
+      @keyframes moveText {
+        0% {
+          transform: translateX(-100%);
+        }
+        100% {
+          transform: translateX(100%);
+        }
+      }
+      .reviews2 {
+        display: flex;
+        gap: 23px;
+        width: 2000px;
+        animation: moveText 20s linear infinite reverse;
+        margin-top: 18px;
+      }
+      .iconwrite {
+        display: flex;
+        justify-content: flex-end;
+        gap: 7px;
+        margin-right: 40px;
+        margin-top: 54px;
+      }
+      .write {
+        font-family: Proxima Nova;
+        font-weight: 400;
+        font-size: 35px;
+        color: #fff;
+        background: none;
+        border: none;
+      }
+      .icon {
+        margin-top: 10px;
+      }
+      .hidden {
+        display: none;
+      }
+      .reg {
+        font-family: 'Montserrat';
+        font-size: 36px;
+        margin-bottom: 40px;
+      }
+      input[type='text'],
+      input[type='email'],
+      input[type='number'],input[type='password'],input[type='date'] {
+        width: 340px;
+        height: 65px;
+        background-color: #fff;
+        border-radius: 10px;
+        margin-left: 200px;
+        border: none;
+        display: flex;
+        justify-content: center;
+        margin-left: 103px;
+        margin-bottom: 5px;
+      }
+      input::placeholder {
+        font-family: 'Montserrat';
+        font-size: 20px;
+        padding-left: 20px;
+      }
+      .black {
+        background-color: black;
+        border: none;
+        border-radius: 10px;
+        width: 340px;
+        height: 65px;
+        color: #fff;
+        font-family: 'Montserrat';
+        font-size: 20px;
+        margin-top: 15px;
+      }
+      .long {
+        width: 613px;
+      }
+      .glassmorphism {
+        background: #f6f6f8;
+        /* background: #f6f5f9; */
+        border-radius: 10px;
+        /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+        backdrop-filter: blur(5px);
+        /* border: 1px solid rgba(255, 255, 255, 0.3); */
+        padding: 20px;
+        margin: auto;
+        width: 550px;
+        height: 960px;
+        text-align: center;
+        margin-top: -570px;
+      }
+      .radio {
+        font-family: Proxima Nova;
+        font-weight: 500;
+        font-size: 21px;
+        /* text-align: center; */
+        color: #0b0b0b;
+        margin-left: -42px;
+      }
+      .checkbox {
+        font-family: Proxima Nova;
+        font-weight: 500;
+        font-size: 21px;
+        /* text-align: center; */
+        color: #0b0b0b;
+        margin-top: 30px;
+        gap: 30px;
+        margin-left: -98px;
+      }
+      .super {
+        margin-left: 60px;
+         /* margin-left: -120px; */
+        margin-bottom: 10px;
+      }
+      .good {
+        margin-left: 55px;
+      }
+      .bad {
+        margin-left: 37px;
+        margin-top: 10px;
+      }
+      input[type="checkbox"],
+input[type="radio"] {
+  accent-color: #6e32e1;
+  width: 30px;
+  height: 30px;
+}
+    </style>
+
+    <!-- menu -->
+    <div class="header">
+      <div class="left">
+        <div class="phone"><img src="images/phone.svg" alt="" /></div>
+        <div class="phonenumber"><p>459-568-017</p></div>
+      </div>
+      <div class="menu">
+        <a href="index.html"><p>Главная</p></a>
+        <a href="example.html"><p>Кейсы</p></a>
+        <a href="review.html"
+          ><p><b>Отзывы</b></p></a
+        >
+      </div>
+      <div class="circles">
+        <a href="https://mail.ru/"><img src="images/circle1.svg" alt="" /></a>
+        <a href="http://www.facebook.com.vn/"
+          ><img src="images/circle2.svg" alt=""
+        /></a>
+        <a href="https://www.instagram.com"
+          ><img src="images/circle3.svg" alt=""
+        /></a>
+      </div>
+    </div>
+    <div>
+      <h1>Отзывы</h1>
+    </div>
+
+    <div class="reviews">
+      <!-- Первый отзыв -->
+      <div class="firstreview">
+        <div class="person1">
+          <img
+            src="images/person1.png"
+            alt=""
+            style="width: 100%; height: 80%"
+          />
+        </div>
+        <div class="text1">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing <br />
+            elit, sed do eiusmod tempor
+          </p>
+        </div>
+      </div>
+      <!-- Второй отзыв -->
+      <div class="firstreview">
+        <div class="person1">
+          <img
+            src="images/person1.png"
+            alt=""
+            style="width: 100%; height: 80%"
+          />
+        </div>
+        <div class="text1">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing <br />
+            elit, sed do eiusmod tempor
+          </p>
+        </div>
+      </div>
+      <!-- Третий отзыв -->
+      <div class="firstreview">
+        <div class="person1">
+          <img
+            src="images/person1.png"
+            alt=""
+            style="width: 100%; height: 80%"
+          />
+        </div>
+        <div class="text1">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing <br />
+            elit, sed do eiusmod tempor
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="reviews2">
+      <!-- Первый отзыв -->
+      <div class="firstreview">
+        <div class="person1">
+          <img
+            src="images/person1.png"
+            alt=""
+            style="width: 100%; height: 80%"
+          />
+        </div>
+        <div class="text1">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing <br />
+            elit, sed do eiusmod tempor
+          </p>
+        </div>
+      </div>
+      <!-- Второй отзыв -->
+      <div class="firstreview">
+        <div class="person1">
+          <img
+            src="images/person1.png"
+            alt=""
+            style="width: 100%; height: 80%"
+          />
+        </div>
+        <div class="text1">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing <br />
+            elit, sed do eiusmod tempor
+          </p>
+        </div>
+      </div>
+      <!-- Третий отзыв -->
+      <div class="firstreview">
+        <div class="person1">
+          <img
+            src="images/person1.png"
+            alt=""
+            style="width: 100%; height: 80%"
+          />
+        </div>
+        <div class="text1">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing <br />
+            elit, sed do eiusmod tempor
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="iconwrite">
+      <div class="icon"><img src="images/arrow.svg" alt="" /></div>
+      <button class="write" onclick="showForm()">Оставить отзыв</button>
+    </div>
+
+    <form
+      action="https://www.bing.com/search?"
+      id="UserEnter"
+      name="UserEnter"
+      target="_blank"
+    >
+      <div id="registerForm" class="glassmorphism hidden">
+        <h2 class="reg">Оставить отзыв</h2>
+        <!-- Форма регистрации -->
+
+        <div class="inp">
+          <input type="text" placeholder="Фамилия" required /><br />
+          <input type="text" placeholder="Имя" required /><br />
+          <input type="number" placeholder="Возраст" required /><br />
+          <input type="password" placeholder="Пароль" required /><br />
+          <input type="date" placeholder="Дата" required /><br />
+          <div class="radio">
+            <p>
+              Пол: 
+              <input type="Radio" name="sex" value="Female" />Женский
+              <input type="Radio" name="sex" value="Male" checked />Мужской
+            </p>
+          </div>
+          <div class="checkbox">
+            <p>
+              Насколько вы довольны? <br />
+              <div class="super"><input
+                type="Checkbox"
+                name="result"
+                value="1"
+                checked
+              />Отлично<br /></div>
+              <div class="good">
+              <input
+                type="Checkbox"
+                name="result"
+                value="2"
+                checked
+              />Хорошо<br /></div>
+              <div class="bad">
+              <input
+                type="Checkbox"
+                name="result"
+                value="3"
+                checked
+              />Плохо<br /></div>
+            </p>
+          </div>
+        </div>
+          <input type="hidden" name="function"  value="page">
+    <input type="hidden" name="page_id"  value="3">
+        <button class="black" type="submit">отправить</button>
+      </div>
+    </form>
+    <script>
+      function showForm() {
+        document.getElementById('registerForm').classList.toggle('hidden')
+      }
+    </script>
+  </body>
+</html>

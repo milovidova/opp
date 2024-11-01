@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #b74646;
+        font-size: 25px;
+        letter-spacing: 15px;
+      }
+      .first {
+        display: flex;
+      }
+      h2 {
+        padding-right: 250px;
+        color: #b74646;
+        font-size: 20px;
+        margin-top: 40px;
+        padding-left: 100px;
+      }
+      p {
+        font-size: 30px;
+        font-weight: bold;
+      }
+      .second {
+        display: flex;
+      }
+      .third {
+        display: flex;
+      }
+      .two {
+        display: flex;
+      }
+      .img {
+        display: flex;
+        justify-content: center;
+      }
+
+      hr {
+        border-color: #b74646;
+      }
+      .img {
+        display: flex;
+        justify-content: space-around;
+      }
+      .pod {
+        display: block;
+        align-items: center;
+        padding-top: 200px;
+      }
+      .word {
+        padding-left: 140px;
+      }
+      .twosvg {
+        padding-left: 200px;
+      }
+      .name {
+        display: flex;
+      }
+      .data {
+        display: flex;
+      }
+      .photo {
+        display: flex;
+        padding-left: 100px;
+        padding-top: 100px;
+      }
+      .profile {
+        width: 300px;
+        height: 300px;
+      }
+      .myname {
+        padding-left: 100px;
+      }
+      .day {
+        padding-right: 30px;
+      }
+      .but {
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+      }
+    </style>
+    <h1>РOCCИЙСКАЯ ФЕДЕРАЦИЯ</h1>
+    <div class="first">
+      <h2>Паспорт выдан</h2>
+      <p>ГУ МВД РОССИИ ПО Г.МОСКВЕ</p>
+    </div>
+    <div class="two">
+      <div class="second">
+        <h2>Дата выдачи</h2>
+        <p>18.05.2023</p>
+      </div>
+      <div class="third">
+        <h2>Код подразделения</h2>
+        <p>770-057</p>
+      </div>
+    </div>
+    <div class="img">
+      <img src="images/1.svg" alt="" />
+      <div class="pod">
+        <div class="twosvg"><img src="images/2.svg" alt="twosvg" /></div>
+        <hr />
+        <div class="word"><h2>Подпись</h2></div>
+      </div>
+    </div>
+    <!-- первая страница -->
+    <div class="photo">
+      <div class="profile"><img src="images/4.svg" alt="" /></div>
+
+      <div class="text">
+        <div class="name">
+          <h2 id="change1">Фамилия</h2>
+          <p id="change2">МИЛОВИДОВА</p>
+        </div>
+
+        <div class="name">
+          <h2 id="change3">Имя</h2>
+          <div class="myname"><p id="change4">НИНА</p></div>
+        </div>
+
+        <div class="name">
+          <h2 id="change5">Отчество</h2>
+          <p id="change6">АНДРЕЕВНА</p>
+        </div>
+        <div class="data">
+          <div class="name">
+            <h2 id="change7">Пол</h2>
+            <p id="change8">ЖЕН.</p>
+          </div>
+          <div class="name">
+            <h2 id="change9">Дата рождения</h2>
+            <div class="day"><p>11.05.2003</p></div>
+          </div>
+        </div>
+        <div class="name">
+          <h2 id="change10">Место рождения</h2>
+          <p id="change11">ГОР.МОСКВА</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="but">
+      <button onclick="changeText()">Изменить на латиницу</button>
+    </div>
+
+    <script>
+      function changeText() {
+        document.getElementById('change1').innerText = 'Surname'
+        document.getElementById('change2').innerText = 'Milovidova'
+        document.getElementById('change3').innerText = 'Name'
+        document.getElementById('change4').innerText = 'Nina'
+        document.getElementById('change5').innerText = 'Patronymic'
+        document.getElementById('change6').innerText = 'Andreevna'
+        document.getElementById('change7').innerText = 'Sex'
+        document.getElementById('change8').innerText = 'Female'
+        document.getElementById('change9').innerText = 'Date of birth'
+        document.getElementById('change10').innerText = 'Place of birth'
+        document.getElementById('change11').innerText = 'Moscow'
+      }
+    </script>
+  </body>
+</html>

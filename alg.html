@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Является ли число четным?</h1>
+    <input type="number" id="numberInput" placeholder="Введите число" />
+    <button onclick="checkEven()">Проверить</button>
+    <p id="result"></p>
+    <script>
+      function checkEven() {
+        const number = parseInt(document.getElementById('numberInput').value)
+        const resultElement = document.getElementById('result')
+
+        if (isNaN(number)) {
+          resultElement.textContent = 'Пожалуйста, введите число.'
+        } else if (number % 2 === 0) {
+          resultElement.textContent = number + ' - четное число.'
+        } else {
+          resultElement.textContent = number + ' - нечетное число.'
+        }
+      }
+    </script>
+  </body>
+</html>

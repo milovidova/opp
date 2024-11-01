@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфолио</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <style>
+      body {
+        background-color: #0b0b0b;
+      }
+      h1 {
+        font-family: Proxima Nova;
+        font-weight: 700;
+        font-size: 50px;
+        color: #fff;
+        display: block;
+        justify-content: flex-start;
+        padding-left: 40px;
+      }
+      h2 {
+        font-family: Proxima Nova;
+        font-weight: 400;
+        font-size: 35px;
+        text-transform: capitalize;
+        color: #fff;
+        display: block;
+        justify-content: flex-start;
+        padding-left: 40px;
+        margin-top: 55px;
+      }
+      h3 {
+        font-family: Proxima Nova;
+        font-weight: 400;
+        font-size: 35px;
+        color: #afafaf;
+        display: block;
+        justify-content: flex-start;
+        padding-left: 40px;
+        margin-top: -15px;
+      }
+      .key {
+        font-family: Proxima Nova;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: #fff;
+        display: block;
+        justify-content: flex-start;
+        padding-left: 40px;
+        margin-top: 35px;
+      }
+      .number {
+        font-family: Proxima Nova;
+        font-weight: 400;
+        font-size: 35px;
+        text-transform: capitalize;
+        color: #fff;
+      }
+      .image1 {
+        width: 671px;
+        height: 355px;
+        background: url('path_to_image');
+      }
+      .number {
+        font-family: Proxima Nova;
+        font-weight: 400;
+        font-size: 35px;
+        text-transform: capitalize;
+        color: #fff;
+        margin-top: -30px;
+      }
+      .header {
+        display: flex;
+        justify-content: space-between;
+      }
+      .left {
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 45px;
+        gap: 21px;
+      }
+      .menu {
+        font-family: Proxima Nova;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 140%;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        gap: 122px;
+        margin-left: -143px;
+      }
+
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+      .circles {
+        display: flex;
+        justify-content: flex-end;
+        gap: 28px;
+        padding-right: 45px;
+        width: 42px;
+        height: 42px;
+        margin-top: 15px;
+      }
+      .photo {
+        display: flex;
+        margin-right: 42px;
+        margin-top: 55px;
+        gap: 42px;
+      }
+      .firsttext {
+        display: block;
+      }
+      .firstblock {
+        display: flex;
+        justify-content: space-between;
+      }
+      .phonenumber {
+        font-family: Proxima Nova;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 140%;
+        text-transform: lowercase;
+        color: #fff;
+      }
+      .thumbnail {
+        width: 100px;
+        cursor: pointer; /* Указатель при наведении */
+      }
+    </style>
+    <!-- menu -->
+    <div class="header">
+      <div class="left">
+        <div class="phone"><img src="images/phone.svg" alt="" /></div>
+        <div class="phonenumber"><p>459-568-017</p></div>
+      </div>
+      <div class="menu">
+        <a href="index.html"><p>Главная</p></a>
+        <a href="example.html"
+          ><p><b>Кейсы</b></p></a
+        >
+        <a href="review.html"><p>Отзывы</p></a>
+      </div>
+      <div class="circles">
+        <a href="https://mail.ru/"><img src="images/circle1.svg" alt="" /></a>
+        <a href="http://www.facebook.com.vn/"
+          ><img src="images/circle2.svg" alt=""
+        /></a>
+        <a href="https://www.instagram.com"
+          ><img src="images/circle3.svg" alt=""
+        /></a>
+      </div>
+    </div>
+
+    <div><h1>Кейсы</h1></div>
+    <!-- Первый блок -->
+    <div class="firstblock">
+      <div class="firsttext">
+        <div><h2>Кейс№1</h2></div>
+        <div><h3>Название кейса</h3></div>
+        <div class="key">
+          <p>
+            Персонализированный welcome pack — ключ к укреплению <br />
+            корпоративной культуры
+          </p>
+        </div>
+      </div>
+      <div class="photo">
+        <div class="number"><p>01</p></div>
+        <div class="image1">
+          <a
+            href="images/image1.png"
+            target="_blank"
+            onclick="openCenteredWindow('images/image1', 600, 400); return false;"
+          >
+            <img src="images/image1.png" alt="Миниатюра" class="thumbnail" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Второй блок -->
+    <div class="firstblock">
+      <div class="firsttext">
+        <div><h2>Кейс№2</h2></div>
+        <div><h3>Название кейса</h3></div>
+        <div class="key">
+          <p>
+            Персонализированный welcome pack — ключ к укреплению <br />
+            корпоративной культуры
+          </p>
+        </div>
+      </div>
+      <div class="photo">
+        <div class="number"><p>02</p></div>
+        <div class="image1"><img src="images/image2.png" alt="" /></div>
+      </div>
+    </div>
+
+    <!-- Третий блок -->
+    <div class="firstblock">
+      <div class="firsttext">
+        <div><h2>Кейс№3</h2></div>
+        <div><h3>Название кейса</h3></div>
+        <div class="key">
+          <p>
+            Персонализированный welcome pack — ключ к укреплению <br />
+            корпоративной культуры
+          </p>
+        </div>
+      </div>
+      <div class="photo">
+        <div class="number"><p>03</p></div>
+        <div class="image1"><img src="images/image3.png" alt="" /></div>
+      </div>
+    </div>
+    <!-- таблица -->
+
+    <script>
+      function openCenteredWindow(url, width, height) {
+        const left = screen.width / 2 - width / 2
+        const top = screen.height / 2 - height / 2
+
+        window.open(
+          url,
+          '_blank',
+          (width = '600px'),
+          (height = '400px'),
+          (top = '100px'),
+          (left = '100px')
+        )
+      }
+    </script>
+  </body>
+</html>

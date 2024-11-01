@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome Pack</title>
+  </head>
+  <body>
+    <style>
+      body {
+        background-color: #0b0b0b;
+      }
+      h1 {
+        font-family: Sorren-Black;
+        font-size: 400px;
+        font-weight: 400;
+        color: white;
+        display: flex;
+        justify-content: center;
+        padding-bottom: -100px;
+        margin-top: 50px;
+      }
+      .text {
+        font-family: Proxima Nova;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 140%;
+        text-align: center;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        margin-top: -300px;
+      }
+      .butt {
+        font-family: Proxima Nova;
+        font-weight: 500;
+        font-size: 21px;
+        text-align: center;
+        color: #fff;
+        margin-top: -3px;
+      }
+      .twobut {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 480px;
+        margin-right: 480px;
+        margin-top: 40px;
+      }
+      .but {
+        background-color: #6e32e1;
+        width: 239px;
+        height: 59px;
+        color: white;
+        border-radius: 60px;
+        border: none;
+        font-family: Proxima Nova;
+        font-weight: 500;
+        font-size: 21px;
+      }
+      .hidden {
+        display: none;
+      }
+
+      .reg {
+        font-family: 'Montserrat';
+        font-size: 36px;
+        margin-bottom: 40px;
+      }
+      input[type='text'],
+      input[type='email'],
+      input[type='number'] {
+        width: 340px;
+        height: 65px;
+        background-color: #fff;
+        border-radius: 10px;
+        margin-left: 200px;
+        border: none;
+        display: flex;
+        justify-content: center;
+        margin-left: 103px;
+        margin-bottom: 5px;
+      }
+      input::placeholder {
+        font-family: 'Montserrat';
+        font-size: 20px;
+        padding-left: 20px;
+      }
+      .black {
+        background-color: black;
+        border: none;
+        border-radius: 10px;
+        width: 340px;
+        height: 65px;
+        color: #fff;
+        font-family: 'Montserrat';
+        font-size: 20px;
+      }
+      .long {
+        width: 613px;
+      }
+      .glassmorphism {
+        background: #f6f6f8;
+        /* background: #f6f5f9; */
+        border-radius: 10px;
+        /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+        backdrop-filter: blur(5px);
+        /* border: 1px solid rgba(255, 255, 255, 0.3); */
+        padding: 20px;
+        margin: auto;
+        width: 550px;
+        height: 670px;
+        text-align: center;
+        margin-top: -650px;
+      }
+      .number {
+        font-family: Proxima Nova;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 140%;
+        text-transform: lowercase;
+        color: #fff;
+      }
+      .header {
+        display: flex;
+        justify-content: space-between;
+      }
+      .left {
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 45px;
+        gap: 21px;
+      }
+      .menu {
+        font-family: Proxima Nova;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 140%;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        gap: 122px;
+        margin-left: -143px;
+      }
+
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+      .circles {
+        display: flex;
+        justify-content: flex-end;
+        gap: 28px;
+        padding-right: 45px;
+        width: 42px;
+        height: 42px;
+        margin-top: 15px;
+      }
+      .you {
+        font-family: Proxima Nova;
+        font-weight: 700;
+        font-size: 50px;
+        color: #fff;
+        display: block;
+        justify-content: flex-start;
+        padding-left: 40px;
+        margin-top: 140px;
+        margin-bottom: 50px;
+      }
+      .card {
+        background-color: #181818;
+        border: 0.89px solid #20222a;
+        border-radius: 32px;
+        width: 331px;
+        height: 331px;
+        border-radius: 32px;
+        /* margin-left: 46px; */
+        margin-top: 54px;
+      }
+      .arrow {
+        display: block;
+        margin-left: 250px;
+        margin-top: 10px;
+      }
+      .adapt {
+        font-family: Proxima Nova;
+        font-weight: 600;
+        font-size: 22px;
+        text-transform: uppercase;
+        color: #fff;
+        margin-top: 100px;
+      }
+      .new {
+        font-family: Proxima nova;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: #afafaf;
+      }
+      .textcard {
+        display: block;
+        margin-left: 30px;
+      }
+      .cards {
+        display: flex;
+        justify-content: flex-start;
+        gap: 8px;
+        margin-left: 46px;
+      }
+      .lastcard {
+        display: flex;
+        gap: 8px;
+        margin-left: 725px;
+        margin-top: -45px;
+      }
+      .card3 {
+        background-color: #6e32e1;
+        width: 331px;
+        height: 331px;
+        border-radius: 32px;
+        margin-top: 54px;
+      }
+      .allcards {
+        margin-top: -55px;
+      }
+      .firstrect {
+        border-radius: 20px;
+        width: 1350px;
+        height: 291px;
+        background: #6e32e1;
+        display: block;
+        align-items: center;
+        margin-left: 45px;
+        margin-bottom: 25px;
+      }
+      .textrect {
+        font-family: Proxima Nova;
+        font-weight: 400;
+        font-size: 35px;
+        text-align: center;
+        color: #fff;
+        padding-top: 100px;
+      }
+      .several {
+        font-family: Proxima Nova;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 140%;
+        text-transform: lowercase;
+        /* text-align: center; */
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+      }
+      .secondrect {
+        border: 1px solid #20222a;
+        border-radius: 20px;
+        width: 1350px;
+        height: 148px;
+        background: #181818;
+        display: block;
+        align-items: center;
+        margin-left: 45px;
+        margin-bottom: 25px;
+      }
+      .secondtext {
+        font-family: Proxima Nova;
+        font-weight: 400;
+        font-size: 35px;
+        text-align: center;
+        color: #fff;
+        padding-top: 55px;
+      }
+      .thirdrect {
+        border-radius: 20px;
+        width: 1350px;
+        height: 291px;
+        background: #6e32e1;
+        display: block;
+        align-items: center;
+        margin-left: 45px;
+        margin-bottom: 25px;
+      }
+      .thirdtext {
+        font-family: Proxima Nova;
+        font-weight: 400;
+        font-size: 35px;
+        text-align: center;
+        color: #fff;
+        padding-top: 100px;
+      }
+      .several {
+        font-family: Proxima Nova;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 140%;
+        text-transform: lowercase;
+        /* text-align: center; */
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+      }
+      .sixrect {
+        border-radius: 20px;
+        width: 1350px;
+        height: 400px;
+        background: #6e32e1;
+        display: block;
+        align-items: center;
+        margin-left: 45px;
+        margin-bottom: 25px;
+      }
+      .sixtext {
+        font-family: Proxima Nova;
+        font-weight: 400;
+        font-size: 35px;
+        text-align: center;
+        color: #fff;
+        padding-top: 100px;
+      }
+    </style>
+    <!-- menu -->
+    <div class="header">
+      <div class="left">
+        <div class="phone"><img src="images/phone.svg" alt="" /></div>
+        <div class="number"><p>459-568-017</p></div>
+      </div>
+      <div class="menu">
+        <a href="index.html"
+          ><p><b>Главная</b></p></a
+        >
+        <a href="example.html"><p>Кейсы</p></a>
+        <a href="review.html"><p>Отзывы</p></a>
+      </div>
+      <div class="circles">
+        <a href="https://mail.ru/"><img src="images/circle1.svg" alt="" /></a>
+        <a href="http://www.facebook.com.vn/"
+          ><img src="images/circle2.svg" alt=""
+        /></a>
+        <a href="https://www.instagram.com"
+          ><img src="images/circle3.svg" alt=""
+        /></a>
+      </div>
+    </div>
+
+    <div class="firsttext">
+      <div><h1>Welcome Pack</h1></div>
+      <div class="text">
+        <p>
+          Персонализированный welcome pack — ключ к укреплению корпоративной
+          <br />
+          культуры и повышению лояльности сотрудников с первого дня.
+        </p>
+      </div>
+    </div>
+
+    <div class="twobut">
+      <button class="but" onclick="showForm()">Оставить заявку</button>
+
+      <button
+        style="
+          border-color: #6e32e1;
+          background-color: transparent;
+          width: 239px;
+          height: 59px;
+          color: white;
+          border-radius: 60px;
+          /* border: none; */
+        "
+      >
+        <a href="#second"
+          ><div class="butt"><p>Узнать больше</p></div></a
+        >
+      </button>
+    </div>
+    <!-- 
+    <div id="registerForm" class="glassmorphism hidden">
+      <h2 class="reg">Оставить заявку</h2>
+      <form>
+        <div class="inp">
+          <input type="text" placeholder="Фамилия" required /><br />
+          <input type="text" placeholder="Имя" required /><br />
+          <input type="email" placeholder="Email" required /><br />
+          <input type="text" placeholder="Мобильный телефон" required /><br />
+          <input type="text" placeholder="Группа" required /><br />
+        </div>
+        <button class="black" type="submit">отправить</button>
+      </form>
+    </div> -->
+
+    <form
+      action="https://www.bing.com/search?"
+      id="UserEnter"
+      name="UserEnter"
+      target="_blank"
+    >
+      <div id="registerForm" class="glassmorphism hidden">
+        <h2 class="reg">Оставить заявку</h2>
+        <!-- Форма регистрации -->
+
+        <div class="inp">
+          <input type="text" placeholder="Фамилия" required /><br />
+          <input type="text" placeholder="Имя" required /><br />
+          <input type="email" placeholder="Email" required /><br />
+          <input type="number" placeholder="Возраст" required /><br />
+          <input type="text" placeholder="Группа" required /><br />
+        </div>
+        <button class="black" type="submit">отправить</button>
+      </div>
+    </form>
+    <!-- <button class="but" onclick="showForm()">оставить заявку</button> -->
+
+    <!-- второй блок -->
+    <div class="secondblock" id="second">
+      <div class="you">
+        <h2>Вы получите:</h2>
+      </div>
+      <div class="allcards">
+        <div class="cards">
+          <div class="card">
+            <div class="arrow"><img src="images/arrow.svg" alt="" /></div>
+            <div class="textcard">
+              <div class="adapt"><h3>АДАПТАЦИЯ</h3></div>
+              <div class="new">
+                <p>
+                  Улучшение адаптации новых <br />
+                  сотрудников
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- вторая карточка -->
+          <div class="card">
+            <div class="arrow"><img src="images/arrow.svg" alt="" /></div>
+            <div class="textcard">
+              <div class="adapt"><h3>ВОВЛЕЧЕННОСТЬ</h3></div>
+              <div class="new">
+                <p>
+                  Повышение вовлеченности <br />
+                  и лояльности сотрудников
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- третья карточка -->
+          <div class="violet">
+            <div class="card3">
+              <div class="arrow">
+                <a href="table.html"><img src="images/arrow.svg" alt="" /></a>
+              </div>
+              <div class="textcard">
+                <div class="adapt"><h3>БРЕНД</h3></div>
+                <div class="new">
+                  <p>
+                    Усиление корпоративного <br />
+                    бренда на мероприятиях
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="lastcard">
+          <!-- четвертая карточка -->
+          <div class="card">
+            <div class="arrow"><img src="images/arrow.svg" alt="" /></div>
+            <div class="textcard">
+              <div class="adapt"><h3>ВПЕЧАТЛЕНИЕ</h3></div>
+              <div class="new">
+                <p>
+                  Создание запоминающегося <br />
+                  первого впечатления
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- пятая карточка -->
+          <div class="card">
+            <div class="arrow"><img src="images/arrow.svg" alt="" /></div>
+            <div class="textcard">
+              <div class="adapt"><h3>КУЛЬТУРА</h3></div>
+              <div class="new">
+                <p>
+                  Поддержка и укрепление <br />
+                  корпоративной культуры
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- второй блок -->
+    <div class="you"><h2>Почему выбирают нас?</h2></div>
+    <div class="firstrect">
+      <div class="textrect">Персонализация под ваш бренд и задачи</div>
+      <div class="several">
+        <ul>
+          <li>укрепление корпоративной культуры</li>
+          <li>повышение лояльности сотрудников с первого дня</li>
+        </ul>
+      </div>
+    </div>
+    <!-- третий блок -->
+    <div class="secondrect">
+      <div class="secondtext">Высокое качество и эксклюзивный дизайн</div>
+    </div>
+    <!-- четвертый блок -->
+    <div class="thirdrect">
+      <div class="thirdtext">Гарантированные сроки выполнения и доставки</div>
+      <div class="several">
+        <ol>
+          <li>укрепление корпоративной культуры</li>
+          <li>повышение лояльности сотрудников с первого дня</li>
+        </ol>
+      </div>
+    </div>
+    <!-- пятый блок -->
+    <div class="secondrect">
+      <div class="secondtext">Комплексное решение от идеи до реализации</div>
+    </div>
+    <!-- шестой блок -->
+    <div class="sixrect">
+      <div class="sixtext">Поддержка на каждом этапе заказа и исполнения</div>
+      <div class="several">
+        <ul>
+          <li>Консультация</li>
+          <li>
+            Оформление заказа
+            <ul>
+              <li>Поддержка в заполнении формы</li>
+              <li>Уточнение деталей заказа</li>
+            </ul>
+          </li>
+          <li>Исполнение заказа</li>
+        </ul>
+      </div>
+    </div>
+    <script>
+      function showForm() {
+        document.getElementById('registerForm').classList.toggle('hidden')
+      }
+    </script>
+  </body>
+</html>

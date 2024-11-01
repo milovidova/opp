@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Решение алгоритмической задачи</h1>
+    <h1>
+      Дано число X. Определить, принадлежит ли это число заданному промежутку
+      [a, b]
+    </h1>
+
+    <label for="a">Значение A:</label>
+    <input type="number" id="a" />
+
+    <label for="b">Значение B:</label>
+    <input type="number" id="b" />
+
+    <label for="x">Значение X:</label>
+    <input type="number" id="x" />
+
+    <button onclick="checkRange()">Оценить</button>
+
+    <p id="result"></p>
+    <script>
+      function checkRange() {
+        let a = parseInt(document.getElementById('a').value)
+        let b = parseInt(document.getElementById('b').value)
+        let x = parseInt(document.getElementById('x').value)
+
+        if (x >= a && x <= b) {
+          document.getElementById('result').innerText =
+            'Да, число ' +
+            x +
+            ' принадлежит заданному диапазону [' +
+            a +
+            ', ' +
+            b +
+            '].'
+        } else {
+          document.getElementById('result').innerText =
+            'Нет, число ' +
+            x +
+            ' не принадлежит заданному диапазону [' +
+            a +
+            ', ' +
+            b +
+            '].'
+        }
+      }
+    </script>
+  </body>
+</html>
